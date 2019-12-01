@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const isFirstCharacterUpperCase = (str) => {
+            let regexp = /^[A-Z]/;
+            if (regexp.test(str)) {
+                console.log("String's first character is uppercase");
+            } else {
+                console.log("String's first character is not uppercase");
+            }
+        }
+
+        let str1 = 'Nguyen van Nam',
+
+            str2 = 'NGUYEN VAN NAM',
+
+            str3 = 'nguyen van Nam';
+
+        isFirstCharacterUpperCase(str1);
+        isFirstCharacterUpperCase(str2);
+        isFirstCharacterUpperCase(str3);
+
+
+    </script>
+</body>
+
+</html>
